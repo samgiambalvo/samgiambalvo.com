@@ -1,0 +1,240 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam Giambalvo</title>
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <script src="jquery-3.1.1.min.js"></script>
+     <script src="scripts.js"></script>           
+     <link rel="stylesheet" href="flickity.css">
+     <script src="flickity.pkgd.min.js"></script>
+     <link rel="stylesheet" type="text/css" media="screen" href="PlainLight-Regular.css" />
+     <meta name="format-detection" content="telephone=no">
+     <link rel="shortcut icon" type="image/x-icon" href="http://samgiambalvo.com/imgs/favicon.ico?v=2" />
+  </head>
+	<body>
+    <div class="shade"></div>
+    <div class="menu">
+      <h1 class="index">Projects</h1>
+      <h1 class="play">Play</h1>
+      <h1 class="about">Contact</h1>
+    </div>
+    <div class="mob nav">
+      <h1 class="nav-projects">Projects</h1>
+      <h1 class="nav-play">Play</h1>
+      <h1 class="nav-about">Contact</h1>
+    </div>
+      <div class="bg">
+      <div class="container">
+      
+        <div class="grid-container intro">
+          <div class="col-most">
+            <h1>Anti CV <span class="half">is an experimental project that explores methods of breaking text recognition. 
+</span></h1>
+          </div>
+          <div class="col-quart right">
+            <img class="right menu-img"src="imgs/index/lines.svg"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg full gray">
+    <video class="cv-video" autoplay loop muted>
+      <source src="imgs/anticv/cv-video.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+      <div class="container">
+    
+        <div class="desc-container">
+          <h1>Overview</h1>
+          <p>Anti CV is an experimental project that explores methods of breaking text recognition in an attempt to raise questions about biometric tracking. The simple fact is that our words are tracked. Governments and individuals around the world - regardless of their motives - can access our names, emails, addresses and even deleted conversations from major social networks. 
+<br><br>
+My goal was to explore quick, simple and extensible ways in which our personal conversations can be rendered untraceable by text-recognition software (OpenCV and Tesseract.js), but remain legible to real people. The outcome was a series of typefaces designed to subvert text recognition, and a javascript translator that takes regular text and leaves it unrecognizable to computer software.</p>
+        </div>
+  
+  <div class="grid-container">
+    <div class="col-half">
+            <img src="imgs/anticv/research1.png"/>
+            <div class="image-cred">
+              <h1>Justice Dept. Demands Data on Visitors to Anti-Trump Website</h1>
+              <p>Source: NY Times</p>
+            </div>
+      </div>
+    <div class="col-half right">
+            <img src="imgs/anticv/research2.png"/>
+            <div class="image-cred">
+              <h1>Trump's Executive Order Calls For Biometric Tracking System</h1>
+              <p>Source: NY Times</p>
+            </div>
+    </div>
+  </div>
+    
+        <div class="desc-container">
+          <h1>The Question</h1>
+          <p>My research got me thinking about the role of text recognition in biometric policies, and how typography could be subverted. In a future where artificial intelligence is resonsible for identifying people via facial recognition, how might AI inform text recognition, and subsequently public policy? <br><br>Ultimately, I landed on a guiding question:<br>What if a typeface was unrecognizable?</p>
+        </div>
+
+      </div>
+    </div>
+    
+  <div class="bg">
+    <div class="grid-container">
+      <div class="col-full">
+        <img src="imgs/anticv/type-test-lg.png">
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="desc-container">
+      <h1>Creating A Baseline</h1>
+      <p>My first step was to create a baseline for successfull text-recognition. I used OpenCV to analyze text at different typefaces, sizes, weight, leading and tracking. For testing purposes, I used an excerpt from the President's executive order calling for the implementation of biometric tracking software </p>
+    </div>
+  
+    <div class="grid-container caro-cont">
+      <div class="caro">
+        <img src="imgs/anticv/result1.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/result2.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/result3.png"/>
+      </div>
+    </div>
+        
+    <div class="desc-container">
+      <h1>The Results</h1>
+      <p>The OpenCV tests revealed a number of attributes that lead to the most successful examples of text-recognition: 40pt type at 50 pt leading, Sans-serif typeface, regular to medium weight, tall x-height (x, e, o), short descenders (p, y), and short ascenders (t, b, f). <br><br>My next step was to take these properties and subvert them. Using an open source software called Modulator, I created a series of bespoke typefaces that exploited OpenCV's approach to text-recognition.</p>
+    </div>
+
+  <div class="grid-container">
+    <div class="col-full">
+      <img src="imgs/anticv/type1.png"/> 
+    </div>
+  </div>
+  <div class="grid-container img-stack">
+    <div class="col-full">
+      <img src="imgs/anticv/type2.png"/> 
+    </div>
+  </div>
+  <div class="grid-container img-stack">
+    <div class="col-full">
+      <img src="imgs/anticv/type3.png"/> 
+    </div>
+  </div>
+
+    <div class="desc-container">
+      <h1>The Results</h1>
+      <p>Armed with new typefaces, I returned to my baseline tests to measure the text-recognition confidence.</p>
+    </div>
+
+    <div class="grid-container caro-cont">
+      <div class="caro">
+        <img src="imgs/anticv/type4.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/type5.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/type6.png"/>
+      </div>
+    </div>
+
+    <div class="desc-container">
+      <h1>Type In Context</h1>
+      <p>I was able to successfully break the OpenCV text-recognitinon, but was left with another question: How do you obscure text without a custom typeface? Often, scenarios in which text should be encrypted are scenarios in which there is no control over custom typefaces.<br><br>So, I approached text-recognition from a linguistic perspective. I investigated text conversations, Old english, phrases vs full-sentences, abbreviation and punctuation.</p>
+    </div>
+
+    <div class="grid-container caro-cont">
+      <div class="caro">
+        <img src="imgs/anticv/result4.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/result5.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/result6.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/result7.png"/>
+      </div>
+    </div>
+
+    <div class="desc-container">
+      <h1>Building a Prototype</h1>
+      <p>The language tests provided useful insights into the value of abbreviation, but I realized that it wasn't the most scalable approach. Using tools like Google Translate and Grammarly as benchmarks, I set out to develop a web-based prototype that would render text unrecognizable.<br><br></p>
+    </div>
+  </div>
+  
+    <div class="bg full gray">
+    <video class="cv-video" autoplay loop muted>
+      <source src="imgs/anticv/cv-video.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+    <div class="container">
+      <div class="desc-container">
+        <h1>How Does It Work?</h1>
+        <p>Well, I didn’t really know how it would work when I started, but I had a guiding idea: I knew I didn’t want to require a key. A lot of encryption tools require a key that the recipient would need to decrypt a message. This can take a lot of extra steps and can be rendered useless if another party has the key. <br><br>
+
+From my earlier explorations I knew that abbreviations and unexpected characters break text-recognition. So, I identified the most effective characters and built a tool that incorporated them into plain text. To test its efficacy, I analyzed the translated text in OpenCV.</p>
+      </div>
+      
+    <div class="grid-container caro-cont">
+      <div class="caro">
+        <img src="imgs/anticv/final1.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/final2.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/final3.png"/>
+      </div>
+      <div class="caro">
+        <img src="imgs/anticv/final4.png"/>
+      </div>
+    </div>
+      
+    </div>
+  
+    <div class="bg desk">
+    <div class="container">
+      
+      <div class="grid-container intro">
+        <div class="col-most">
+          <h1>Sam Giambalvo <span class="half">is a designer and developer solving digital and physical problems.</span></h1>
+        </div>
+        <div class="col-quart right">
+          <img class="right menu-img"src="imgs/index/lines.svg"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="grid-container desc mob bot">
+      <div class="col-quart">
+        <h1>Connect</h1>
+      </div>
+      <div class="col-half">
+        <div class="col-quart clients">
+          <p><a href="mailto:samgiambalvo@gmail.com">Email</a></p>
+          <p><a href="https://www.linkedin.com/in/sam-giambalvo-94275761/" target="_blank">LinkedIn</a></p>
+          <p></p>
+        </div>
+        <div class="col-quart clients">
+          <p><a href="https://www.are.na/sam-giambalvo" target="_blank">Arena</a></p>
+          <p><a href="https://twitter.com/samgmblvo" target="_blank">Twitter</a></p>
+        </div>
+        <div class="col-quart clients">
+          <p><a href="https://github.com/sam-zoomforth" target="_blank">Github</a></p>
+          <p><a href="https://www.instagram.com/samgiambalvo/" target="_blank">Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+</html>
