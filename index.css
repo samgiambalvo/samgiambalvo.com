@@ -307,7 +307,7 @@ body {
   line-height: 3.5vw;
 }
 
-.desc-container p, .about-area p, .desc p {
+.desc-container p, .about-area p, .desc p, .desc-container a:link, .desc-container a:visited {
   font-size: 1.5vw;
   line-height: 2.75vw;
   margin-top: 2vw;
@@ -649,10 +649,26 @@ body {
   transition: all cubic-bezier(0.2, 0.2, 0.1, 0.6) 0.2s;
 }
 
-.clients a:hover, .intro a:hover, .about-area a:hover {
+.clients a:hover, .intro a:hover, .about-area a:hover
+{
   border-bottom: 1px solid rgba(0,0,0,0.4);
   padding-bottom: 0.25vw;
 }
+
+.desc-container a:link, .desc-container a:visited {
+	border-bottom: 1px solid transparent;
+	padding-bottom: 0.25vw;
+  transition: all cubic-bezier(0.2, 0.2, 0.1, 0.6) 0.2s;
+	text-decoration: none;
+	color: #333;
+	margin-top: 1.75vw;
+	display: inline-block;
+}
+
+.desc-container a:hover {
+	  border-bottom: 1px solid rgba(0,0,0,0.4);
+} 
+
 
 .play-feat {
   padding: 15vw 0 15vw 0;
