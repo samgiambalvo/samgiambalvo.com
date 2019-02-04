@@ -38,10 +38,8 @@
         </div>
       </div>
     </div>
-    <div class="bg full gray">
-    <video class="cv-video" autoplay loop muted>
-      <source src="imgs/anticv/cv-video.mp4" type="video/mp4">
-    </video>
+    <div class="bg full black anticv-header">
+			<h1>What if a typeface was undetectable?</h1>
     </div>
     
       <div class="container">
@@ -72,129 +70,232 @@ My goal was to explore quick, simple and extensible ways in which our personal c
     
         <div class="desc-container">
           <h1>The Question</h1>
-          <p>My research got me thinking about the role of text recognition in biometric policies, and how typography could be subverted. In a future where artificial intelligence is resonsible for identifying people via facial recognition, how might AI inform text recognition, and subsequently public policy? <br><br>Ultimately, I landed on a guiding question:<br>What if a typeface was unrecognizable?</p>
+          <p>My research got me thinking about the role of text recognition in biometric policies, and how typography could be subverted. In a future where artificial intelligence is responsible for identifying people via facial recognition, how might AI inform text recognition, and subsequently public policy? <br><br>Ultimately, I landed on a guiding question:<br>What if a typeface was unrecognizable?</p>
+					<p>My first step was to create a baseline for successfull text-recognition. I used OpenCV to analyze text at different typefaces, sizes, weight, leading and tracking. For testing purposes, I used an excerpt from the President's executive order calling for the implementation of biometric tracking software.</p>
         </div>
 
       </div>
     </div>
-    
-  <div class="bg">
-    <div class="grid-container">
-      <div class="col-full">
-        <img src="imgs/anticv/type-test-lg.png">
-      </div>
-    </div>
-  </div>
   
   <div class="container">
-    <div class="desc-container">
-      <h1>Creating A Baseline</h1>
-      <p>My first step was to create a baseline for successfull text-recognition. I used OpenCV to analyze text at different typefaces, sizes, weight, leading and tracking. For testing purposes, I used an excerpt from the President's executive order calling for the implementation of biometric tracking software </p>
-    </div>
-  
-    <div class="grid-container caro-cont">
-      <div class="caro">
-        <img src="imgs/anticv/result1.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/result2.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/result3.png"/>
-      </div>
-    </div>
+
+	<div class="grid-container">
+		<div class="col-full">
+			<img src="imgs/anticv/res.png"/>
+
+		</div>
+
+	</div>
         
     <div class="desc-container">
       <h1>The Results</h1>
-      <p>The OpenCV tests revealed a number of attributes that lead to the most successful examples of text-recognition: 40pt type at 50 pt leading, Sans-serif typeface, regular to medium weight, tall x-height (x, e, o), short descenders (p, y), and short ascenders (t, b, f). <br><br>My next step was to take these properties and subvert them. Using an open source software called Modulator, I created a series of bespoke typefaces that exploited OpenCV's approach to text-recognition.</p>
+      <p>The OpenCV tests revealed a number of attributes that lead to the most successful examples of text-recognition: 40pt type at 50 pt leading, Sans-serif typeface, regular to medium weight, tall x-height (x, e, o), short descenders (p, y), and short ascenders (t, b, f). <br><br>My next step was to take these properties and subvert them. Using an open source software called Modulator by Metaflop, I created a series of three bespoke typefaces that exploited OpenCV's approach to text-recognition.</p>
     </div>
 
-  <div class="grid-container">
-    <div class="col-full">
-      <img src="imgs/anticv/type1.png"/> 
-    </div>
-  </div>
-  <div class="grid-container img-stack">
-    <div class="col-full">
-      <img src="imgs/anticv/type2.png"/> 
-    </div>
-  </div>
-  <div class="grid-container img-stack">
-    <div class="col-full">
-      <img src="imgs/anticv/type3.png"/> 
-    </div>
-  </div>
-
-    <div class="desc-container">
-      <h1>The Results</h1>
-      <p>Armed with new typefaces, I returned to my baseline tests to measure the text-recognition confidence.</p>
-    </div>
-
-    <div class="grid-container caro-cont">
-      <div class="caro">
-        <img src="imgs/anticv/type4.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/type5.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/type6.png"/>
-      </div>
-    </div>
-
-    <div class="desc-container">
-      <h1>Type In Context</h1>
-      <p>I was able to successfully break the OpenCV text-recognitinon, but was left with another question: How do you obscure text without a custom typeface? Often, scenarios in which text should be encrypted are scenarios in which there is no control over custom typefaces.<br><br>So, I approached text-recognition from a linguistic perspective. I investigated text conversations, Old english, phrases vs full-sentences, abbreviation and punctuation.</p>
-    </div>
-
-    <div class="grid-container caro-cont">
-      <div class="caro">
-        <img src="imgs/anticv/result4.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/result5.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/result6.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/result7.png"/>
-      </div>
-    </div>
+		<div class="grid-container">
+			
+			<div class="exp-nav-hover" style="position: static;">
+				<div class="exp-nav" style="border-top: 1px solid #eaeaea;">
+					<div class="nav-item besp-1">
+						<h1>Bespoke #1</h1>
+					</div>
+					<div class="nav-item besp-2">
+						<h1>Bespoke #2</h1>
+					</div>
+					<div class="nav-item besp-3">
+						<h1>Bespoke #3</h1>
+					</div>
+				</div>
+			</div>
+			
+			<div class="specimen besp-one">
+				
+				<div class="spec-row">
+					<div class="spec-tile border-left border-top">
+						<h1>Aa</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Bb</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Cc</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Dd</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Ee</h1>
+					</div>
+					<div class="spec-tile border-left border-right border-top">
+						<h1>Ff</h1>
+					</div>
+				</div>
+				<div class="spec-row">
+					<div class="spec-tile border-left border-top">
+						<h1>Gg</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Hh</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Ii</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Jj</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Kk</h1>
+					</div>
+					<div class="spec-tile border-left border-right border-top">
+						<h1>Ll</h1>
+					</div>
+				</div>
+				<div class="spec-row">
+					<div class="spec-tile border-left border-top">
+						<h1>Mm</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Nn</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Oo</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Pp</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Qq</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-right">
+						<h1>Rr</h1>
+					</div>
+				</div>
+				<div class="spec-row">
+					<div class="spec-tile border-left border-top">
+						<h1>Ss</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Tt</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Uu</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Vv</h1>
+					</div>
+					<div class="spec-tile border-left border-top">
+						<h1>Ww</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-right">
+						<h1>Xx</h1>
+					</div>
+				</div>
+				<div class="spec-row">
+					<div class="spec-tile border-left border-top border-bottom">
+						<h1>Yy</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-bottom">
+						<h1>Zz</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-bottom">
+						<h1>01</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-bottom">
+						<h1>:-</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-bottom">
+						<h1>!~</h1>
+					</div>
+					<div class="spec-tile border-left border-top border-right border-bottom">
+						<h1>/?</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <div class="desc-container">
       <h1>Building a Prototype</h1>
-      <p>The language tests provided useful insights into the value of abbreviation, but I realized that it wasn't the most scalable approach. Using tools like Google Translate and Grammarly as benchmarks, I set out to develop a web-based prototype that would render text unrecognizable.<br><br></p>
+      <p>I found that I was able to successfully break the OpenCV text-recognition, but was left with another question: How do you obscure text without a custom typeface? Often, scenarios in which text should be encrypted are scenarios in which there is no control over custom typefaces (think Facebook, Twitter and social media). Using tools like Google Translate and Grammarly as benchmarks, I set out to develop a web-based prototype that would render text unrecognizable.<br><br>From my earlier explorations I knew that abbreviations and unexpected characters were successful at breaking text-recognition. So, I identified the most effective characters and built a tool that incorporated them into plain text.</p>
     </div>
+		
+		<div class="grid-container exp-container">
+			<div class="exp-top">
+				<div class="exp-nav-hover">
+					<div class="status"></div>
+					<div class="exp-nav">
+						<div class="nav-item stepOne">
+							<h1>Step One</h1>
+						</div>
+						<div class="nav-item stepTwo">
+							<h1>Step Two</h1>
+						</div>
+						<div class="nav-item stepThree">
+							<h1>Step Three</h1>
+						</div>
+						<div class="nav-item stepFour">
+							<h1>Step Four</h1>
+						</div>
+						<div class="nav-item stepFive" style="border-right: 0;">
+							<h1>Step Five</h1>
+						</div>
+					</div>
+				</div>
+				<div class="exp-top-content">
+					<div class="exp-slide1">
+						<h1>How does it work?</h1>
+					</div>
+					<div class="exp-slide2">
+						<h1>[“How”, “does”, “this”, “work?”]</h1>
+					</div>
+					<div class="exp-slide3">
+						<img src="imgs/anticv/slide2.svg"/>
+					</div>
+					<div class="exp-slide4">
+						<img src="imgs/anticv/slide3.svg"/>
+					</div>
+					<div class="exp-slide5">
+						<h1>*How d_oes ⦂this wor.k?</h1>
+					</div>
+				</div>
+			</div>
+			<div class="exp-bot">
+				<div class="exp-bot-left">
+					<div class="step-num">
+						Step One
+					</div>
+				</div>
+				<div class="exp-bot-right">
+					<div class="step-title">
+						The Input
+					</div>
+					<div class="step-desc">
+						The original input text is stored in a string variable.  
+					</div>
+				</div>
+			</div>
+		</div>
   </div>
-  
-    <div class="bg full gray">
-    <video class="cv-video" autoplay loop muted>
-      <source src="imgs/anticv/cv-video.mp4" type="video/mp4">
-    </video>
-    </div>
     
+	<div class="bg full gray" style="margin: 15vw 0 0 0;">
+    <div class="container">
+      <div class="grid-container">
+	    <video class="cv-video" autoplay loop muted>
+	      <source src="imgs/anticv/cv-video.mp4" type="video/mp4">
+	    </video>
+      </div>
+    </div>
+   </div>
+		
     <div class="container">
       <div class="desc-container">
-        <h1>How Does It Work?</h1>
-        <p>Well, I didn’t really know how it would work when I started, but I had a guiding idea: I knew I didn’t want to require a key. A lot of encryption tools require a key that the recipient would need to decrypt a message. This can take a lot of extra steps and can be rendered useless if another party has the key. <br><br>
-
-From my earlier explorations I knew that abbreviations and unexpected characters break text-recognition. So, I identified the most effective characters and built a tool that incorporated them into plain text. To test its efficacy, I analyzed the translated text in OpenCV.</p>
+        <h1>Testing Its Efficacy</h1>
+        <p>I used text from a real-life scenario and evaluated the number of incorrectly identified words in OpenCV's text-recognition software before and after the use of my translator.</p>
       </div>
       
-    <div class="grid-container caro-cont">
-      <div class="caro">
-        <img src="imgs/anticv/final1.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/final2.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/final3.png"/>
-      </div>
-      <div class="caro">
-        <img src="imgs/anticv/final4.png"/>
-      </div>
+    <div class="grid-container">
+	    <div class="col-full">
+	      <img src="imgs/anticv/anticv-results.png"/> 
+	    </div>
     </div>
       
     </div>
