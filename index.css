@@ -614,9 +614,10 @@ body {
 }
 
 .portrait {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: block;
+  margin-top: 2.5vw;
 }
 
 .about-area .col-half, .desc .col-half {
@@ -630,10 +631,6 @@ body {
 
 .about-area {
   margin-top: 10vw;
-}
-
-.portrait {
-  margin-top: 2.5vw;
 }
 
 .desc {
