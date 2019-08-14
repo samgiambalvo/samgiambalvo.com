@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
-  $(".intro, .gray, .grid-container, .full").addClass("hide");
-  $(".intro, .gray, .grid-container, .full").addClass("show");
+  $(".intro, .gray, .grid-container, .full, .portrait").addClass("hide");
+  $(".intro, .gray, .grid-container, .full, .portrait").addClass("show");
 	$(".exp-slide2, .exp-slide3, .exp-slide4, .exp-slide5, .exp-slide6").addClass("hideDown");
 	$(".besp-1").addClass("spec-select");
 	$(".stepOne").addClass("nav-select");

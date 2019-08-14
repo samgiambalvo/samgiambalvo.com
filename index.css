@@ -215,7 +215,7 @@ body {
   margin-top: 1vw;
 }
 
-.intro, .gray, .grid-container, .full {
+.intro, .gray, .grid-container, .full, .portrait {
   opacity: 0;
   transform: translateY(10vw);
 }
@@ -230,7 +230,8 @@ body {
 .exp-slide4,
 .exp-slide5,
 .exp-slide6,
-.status
+.status,
+.portrait
   {
   -webkit-transition: all cubic-bezier(0.6, 0.2, 0.1, 1) 1s;
   transition: all cubic-bezier(0.6, 0.2, 0.1, 1) 1s;
@@ -252,11 +253,6 @@ body {
   opacity: 0;
   visibility: hidden;
   cursor: pointer;
-}
-
-.show {
-  opacity:1 !important;
-  transform: translateY(0) !important;
 }
 
 .half {
@@ -316,10 +312,6 @@ body {
   width: 5.25vw;
   opacity: 0.5;
   cursor: pointer;
-}
-
-.hide {
-  opacity: 0;
 }
 
 .hideDown {
@@ -1513,8 +1505,13 @@ body {
 }
 
 
+.show {
+  opacity:1 !important;
+  transform: translateY(0) !important;
+}
 
-
-
+.hide {
+  opacity: 0;
+}
 
 
