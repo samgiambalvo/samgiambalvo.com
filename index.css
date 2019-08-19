@@ -1308,7 +1308,36 @@ body {
 	margin-top: 2.5vw;
 }
 
+.folk-phone {
+	width: 26% !important;
+	margin: 0 auto;
+	display: block;
+}
+
+.folk-brand-img img {
+	width: 75%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 15vw;
+}
+
+.folk-desk {
+	width: 100% !important;
+	margin: 0 auto;
+	display: block;
+}
+
+
 @media (max-width: 600px) { 
+	
+	.mob-hide {
+		display: none !important;
+	}
+	
+	.folk-phone {
+		width: 65% !important;
+	}
+	
   .col-half, .col-quart, .col-most, .desc-container, .caro, .portrait {
     width: 100%;
     display: block;
